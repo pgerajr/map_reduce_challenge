@@ -13,7 +13,7 @@ function idadeDaTurma(total, aluno) {
     return total + aluno.idade;
 }
 
-function showResults(result) {
+function showResultTitle(result) {
     let res1 = document.getElementById("result1");
     let res2 = document.getElementById("result2");
 
@@ -32,7 +32,7 @@ function mapArray() {
         mapped.push(" " + aluno.nome + " tem " + aluno.idade + " anos");
     }
 
-    showResults("res1");
+    showResultTitle("res1");
 
     map.innerHTML = mapped;
 }
@@ -45,7 +45,7 @@ function reduceArray() {
         total = total + aluno.idade;
     }
 
-    showResults("res2");
+    showResultTitle("res2");
 
     reduce.innerHTML = "A soma das idades é igual a <strong>" + total + "</strong>";
 
